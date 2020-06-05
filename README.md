@@ -26,6 +26,7 @@ lastname - String,
  email - String, 
 
  tags – Array de String) 
+________________________________________________________________________________________________________________________________________
 
 - Médio 
 
@@ -40,6 +41,8 @@ lastname - String,
 10 – Crie uma função para exibir os atributos e os valores do objeto da questão 5. (Dica: utilizar as funções já existente em objetos JavaScript para atributos e os valores -> keys() e values()). Pode usar console.log para imprimir na tela. 
 
 11 – Faça a mesma lógica da questão anterior de exibir os atributos e valores do objeto, mas dessa vez utilize o método toString() dos objetos, criando sua própria implementação dele. Pode usar console.log para imprimir na tela. 
+
+________________________________________________________________________________________________________________________________________
 
 - Avançado 
 
