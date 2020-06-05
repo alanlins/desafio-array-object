@@ -2,6 +2,7 @@
 
 Projeto simples em JS, para trabalhar com manipulação de Array e Objetos.
 
+* Projeto deverá ser criado do início.
 ________________________________________________________________________________________________________________________________________
 
 # Array | Object
