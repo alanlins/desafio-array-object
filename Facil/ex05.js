@@ -5,15 +5,16 @@
 //  tags – Array de String)
 
 function ex05(firstname, lastname, email, tags) {
-  this.firstname = firstname;
-  this.lastname = lastname;
-  this.email = email;
-  this.tags = tags;
+  return {
+    firstname: firstname,
+    lastname: lastname,
+    email: email,
+    tags: tags,
+  };
 }
-var retorne = new ex05({
-  firstname: "Augusto",
-  lastname: "Oliveira",
-  email: "augusto.oliveira_22@hotmail.com",
-  tags: [{ tags: "ex05" }],
-});
-console.log("Obj retornado: ", retorne.firstname);
+
+console.log(
+  ex05("Augusto", "Oliveira ", "augusto.oliveira_22@hotmmail.com", [
+    { tags: "Primeiro Codigo" },
+  ])
+);
