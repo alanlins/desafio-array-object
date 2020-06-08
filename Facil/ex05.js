@@ -16,10 +16,4 @@ var retorne = new ex05({
   email: "augusto.oliveira_22@hotmail.com",
   tags: [{ tags: "ex05" }],
 });
-console.log(
-  "Obj retornado: ",
-  retorne.firstname,
-  retorne.lastname,
-  retorne.email,
-  retorne.tags
-);
+console.log("Obj retornado: ", retorne.firstname);
