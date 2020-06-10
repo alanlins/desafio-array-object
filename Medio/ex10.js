@@ -1,20 +1,20 @@
-//10 – Crie uma função para exibir os atributos e os valores do objeto da questão 5. (Dica: utilizar as funções já existente em objetos
-//JavaScript para atributos e os valores -> keys() e values()). Pode usar console.log para imprimir na tela.
+//Crie uma função que receba um objeto como parâmetro, e exiba as suas propriedades da seguinte forma:
+//key: nome_da_propriedade - value: valor_da_propriedade
+//(Dica: Você pode utilizar o Object.keys()
 
-function ex05(firstname, lastname, email, tags) {
-  return {
-    firstname: firstname,
-    lastname: lastname,
-    email: email,
-    tags: tags,
-  };
-}
+//Criar a função que recebe um objeto como parâmetro e exibir com console.log
+//Percorrer e exibir o nome das propriedades do Objeto
+//Percorrer e exbir o nome e o valor das propriedades do objeto
 
-function exibir() {
-  return ex05("Augusto", "Oliveira ", "augusto.oliveira_22@hotmmail.com", [
-    { tags: "Primeiro Codigo" },
-  ]);
-}
+const user = {
+  name: "Augusto",
+  lastName: "Oliveira",
+  email: "augusto.oliveira_2@hotmail.com",
+};
 
-console.log(Object.keys(exibir()));
-console.log(Object.values(exibir()));
+const userData = {};
+Object.keys(user).forEach(function (key) {
+  userData[key] = user[key];
+});
+
+console.log(userData);
