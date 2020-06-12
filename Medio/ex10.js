@@ -15,6 +15,5 @@ const user = {
 const userData = {};
 Object.keys(user).forEach(function (key) {
   userData[key] = user[key];
+  console.log(`key:${key} e value: ${user[key]}`);
 });
-
-console.log(userData);
