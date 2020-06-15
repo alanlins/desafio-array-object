@@ -2,8 +2,10 @@
 //de master, mapeie somente os campos informados anteriormente, e exiba-os no console.
 
 const repos = require("../nodejs-repos.json");
-
-const result = repos.map(
+const retorno = repos.filter(
+  ({ default_branch }) => default_branch === "master"
+);
+const result = retorno.map(
   ({ name, full_name, description, language, created_at, default_branch }) => {
     const row = {
       name,
@@ -17,4 +19,5 @@ const result = repos.map(
     return { ...row };
   }
 );
+
 console.log(result);
